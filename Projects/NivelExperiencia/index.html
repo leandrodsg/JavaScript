@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nivel de Experiencia</title>
+</head>
+<body>
+    <h2>Verificar Experiencia</h2>
+    <p>
+        Digite seu nome:
+        <input type="text" name="txtnom" id="txtnom">
+    </p>
+    <p>
+        Digite seu tempo de experiencia:
+        <input type="number" name="txtnum" id="txtnum">
+    </p>
+    <p id="res">
+        <input type="button" value="Verificar" onclick="verificar()">
+    </p>
+
+    <script>
+        function verificar() {
+            var nome = document.getElementById('txtnom').value;
+            var numero = document.getElementById('txtnum').value;
+            var res = document.getElementById("res");
+            var tempo = Number(numero);
+            var result =  '';            
+            if (tempo <= 2) {
+                result = "Nível Principiante"; 
+            } else if (tempo <= 4) {
+                result = "Nível Intermedio";
+            } else if (tempo <= 7) {
+                result = "Nível Avanzado";
+            } else if (tempo <= 10) {
+                result = "Nível Experto";
+            } else {
+                result = "Nível Guru";
+            }
+            res.innerHTML = `O usuário ${nome} está no ${result}`;
+        }
+    </script>
+</body>
+</html>
