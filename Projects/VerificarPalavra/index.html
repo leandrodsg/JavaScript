@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudios Linguisticos</title>
+</head>
+<body>
+    <h2>Nivel de experiencia</h2>
+    <p>
+        Digite uma palavra:
+        <input type="text" name="txtp" id="txtp">
+    </p>
+    <p>
+        <input type="button" value="Verificar" onclick="verificar()">
+    </p>
+    <p id="resultado">Resultado aqui</p>
+
+    <script>
+        function verificar(){
+            var texto = document.getElementById("txtp").value;
+            var palavra = texto;
+            var resultado = document.getElementById("resultado");
+            
+            var verificar = '';
+            if (palavra.charAt(0) == 'H' && palavra.length == 9){ 
+                verificar = "Hermosa";
+            } else if (palavra.charAt(0) == 'P' && palavra.length == 5) {
+                verificar = "Hermosa";
+            } else {
+                verificar = "Não é uma palavra hermosa";
+            }
+            
+            resultado.innerHTML = verificar;
+        }
+    </script>
+</body>
+</html>
