@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h2>Pratos Disponiveis</h2>
+    </header>
+    <section>
+        <div id="dados">
+            <p>
+                Escolha seu prato:
+                <select name="txtprato" id="txtprato">
+                    <option value="">Selecione...</option>
+                    <option value="carne">Carne</option>
+                    <option value="pasta">Pasta (con Gluten)</option>
+                    <option value="risoto">Risoto (con Lactosa)</option>
+                </select>
+            </p>
+            <p>
+                Preferencia ou Intolerancia:
+                <select name="txtinto" id="txtinto">
+                    <option value="">Selecione...</option>
+                    <option value="vegano">Vegano</option>
+                    <option value="gluten">Intolerancia ao Gluten</option>
+                    <option value="lactosa">Intolerancia a Lactosa</option>
+                </select>
+            </p>
+            <p>
+                <input type="submit" value="Faca seu pedido" onclick="pedido()">
+            </p>
+        </div>
+        <div id="res">
+            <p>
+                Resultado
+            </p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; ProjetoRestaurante</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
