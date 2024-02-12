@@ -11,29 +11,31 @@
         <h2>Pratos Disponiveis</h2>
     </header>
     <section>
-        <div id="dados">
-            <p>
-                Escolha seu prato:
-                <select name="txtprato" id="txtprato">
-                    <option value="">Selecione...</option>
-                    <option value="carne">Carne</option>
-                    <option value="pasta">Pasta (con Gluten)</option>
-                    <option value="risoto">Risoto (con Lactosa)</option>
-                </select>
-            </p>
-            <p>
-                Preferencia ou Intolerancia:
-                <select name="txtinto" id="txtinto">
-                    <option value="">Selecione...</option>
-                    <option value="vegano">Vegano</option>
-                    <option value="gluten">Intolerancia ao Gluten</option>
-                    <option value="lactosa">Intolerancia a Lactosa</option>
-                </select>
-            </p>
-            <p>
-                <input type="submit" value="Faca seu pedido" onclick="pedido()">
-            </p>
-        </div>
+        <form id="pedido-form">
+            <div id="dados">
+                <p>
+                    Escolha seu prato:
+                    <select name="txtprato" id="txtprato">
+                        <option value="">Selecione...</option>
+                        <option value="carne">Carne</option>
+                        <option value="pasta">Pasta (com Glúten)</option>
+                        <option value="risoto">Risoto (com Lactose)</option>
+                    </select>
+                </p>
+                <p>
+                    Preferência ou Intolerância:
+                    <select name="txtinto" id="txtinto">
+                        <option value="">Selecione...</option>
+                        <option value="vegano">Vegano</option>
+                        <option value="gluten">Intolerância ao Glúten</option>
+                        <option value="lactosa">Intolerância à Lactose</option>
+                    </select>
+                </p>
+                <p>
+                    <input type="submit" value="Faça seu pedido">
+                </p>
+            </div>
+        </form>
         <div id="res">
             <p>
                 Resultado
