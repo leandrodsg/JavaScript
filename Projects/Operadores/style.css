@@ -1,0 +1,103 @@
+/* Reset de Estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para o cabeçalho */
+header {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Estilo para o título do cabeçalho */
+header h2 {
+    font-size: 24px;
+}
+
+/* Estilo para a seção principal */
+section {
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para os parágrafos dentro da seção */
+section p {
+    margin-bottom: 10px;
+}
+
+/* Estilo para os inputs dentro da seção */
+section input[type="number"], 
+section input[type="button"], 
+section select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Estilo para o botão de calcular */
+section input[type="button"] {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Estilo para o botão de calcular ao passar o mouse */
+section input[type="button"]:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo para o resultado */
+#res {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+}
+
+/* Estilo para o rodapé */
+footer {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilo para o rodapé - Link de contato */
+footer p {
+    font-size: 14px;
+}
+
+/* Estilo para o rodapé - Link de contato ao passar o mouse */
+footer p a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Estilo para o rodapé - Link de contato ao passar o mouse */
+footer p a:hover {
+    text-decoration: underline;
+}

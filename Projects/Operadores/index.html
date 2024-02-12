@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h2>Operacao de dois numeros</h2>
+    </header>
+    <section>
+        <div id="dados">
+            <p>
+                Digite o <strong>primeiro</strong> numero:
+                <input type="number" id="txtnum1">
+            </p>
+            <p>
+                Digite o <strong>segundo</strong> numero:
+                <input type="number" id="txtnum2">
+            </p>
+            <p>
+                Insira o operador desejado: 
+                <select name="txtoperador" id="txtoperador">
+                    <option value="somar">+</option>
+                    <option value="subtrair">-</option>
+                    <option value="multiplicar">*</option>
+                    <option value="dividir">/</option>
+                </select>
+            </p>
+            <p>
+                <input type="button" value="Calcular" onclick="calcular()">
+            </p>
+        </div>
+        <div id="res">
+            AQUI VAI O RESULTADO
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Contato: gustavo@ehgay.com</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
